@@ -10,8 +10,8 @@ export const useFetchStats = () => {
     const fetchStats = async () => {
         loading.value = true
         try {
-            const res = await merchants_api.getStats() as any
-            stats.value = res.data || res
+            const res = await merchants_api.getDashboard() as any
+            stats.value = res.data?.stats || res.stats || res.data || res
         } catch (err: any) {
             showToast({ title: "Error", message: err.message || "Failed to fetch stats", toastType: "error" })
         } finally {
