@@ -22,46 +22,52 @@
 
         <section class="prose prose-emerald max-w-none space-y-12 text-slate-600 leading-relaxed">
           <div>
-            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">1. Marketplace Ecosystem</h2>
-            <p>WiseKings Africa provides a global snacks marketplace. By listing products, you agree to fulfill orders with high-quality standards and professional packaging. Merchants are independent contractors and not employees of the Company.</p>
+            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">1. The Marketplace Ecosystem</h2>
+            <p>Welcome to the WiseKings Merchant Ecosystem. By integrating your products into our marketplace, you enter into a strategic distribution agreement with WiseKings Africa. We provide a high-frequency sales channel powered by a decentralized partner network. Merchants are responsible for maintaining optimal stock levels and ensuring that all products meet our premium quality standards.</p>
           </div>
 
           <div>
-             <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">2. Product Integrity & Compliance</h2>
-             <p>All listed products must meet regional health and safety certifications. WiseKings reserves the right to request proof of production standards. Prohibited items or mislabelling will result in store suspension without prior notice.</p>
+            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">2. Product Integrity & Brand Standards</h2>
+            <p>Every product listed on the WiseKings store must adhere to strict regulatory and brand-specific quality benchmarks. Merchants must ensure:</p>
+            <ul class="list-disc pl-6 space-y-3 mt-4 text-emerald-600 font-bold">
+               <li>Valid NAFDAC or equivalent regional health and safety certifications.</li>
+               <li>Honest representation of ingredients, expiry dates, and nutritional value.</li>
+               <li>Premium packaging that reflects the WiseKings luxury snacking experience.</li>
+            </ul>
+            <p class="mt-4">The Company reserves the right to delist any SKU that fails to meet consumer satisfaction or safety KPIs.</p>
           </div>
 
-          <div class="p-8 bg-emerald-50 rounded-3xl border border-emerald-100">
-             <h3 class="text-emerald-900 font-black mb-4 uppercase tracking-widest text-sm text-center">Commission & Fees</h3>
+          <div class="p-8 bg-emerald-50 rounded-3xl border border-emerald-100 shadow-sm shadow-emerald-200/50">
+             <h3 class="text-emerald-900 font-black mb-4 uppercase tracking-widest text-sm text-center">Commission Infrastructure & Fees</h3>
              <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
                 <div>
-                   <p class="text-[10px] font-black text-emerald-600 uppercase">Standard Sales</p>
-                   <p class="text-2xl font-black text-slate-900">5%</p>
+                   <p class="text-[10px] font-black text-emerald-600 uppercase tracking-widest leading-none mb-2">Standard Sales</p>
+                   <p class="text-2xl font-black text-slate-900 tracking-tighter">15%</p>
                 </div>
                 <div>
-                   <p class="text-[10px] font-black text-emerald-600 uppercase">Global Export</p>
-                   <p class="text-2xl font-black text-slate-900">8%</p>
+                   <p class="text-[10px] font-black text-emerald-600 uppercase tracking-widest leading-none mb-2">Global Export</p>
+                   <p class="text-2xl font-black text-slate-900 tracking-tighter">20%</p>
                 </div>
                 <div>
-                   <p class="text-[10px] font-black text-emerald-600 uppercase">Payout Fee</p>
-                   <p class="text-2xl font-black text-slate-900">₦0.00</p>
+                   <p class="text-[10px] font-black text-emerald-600 uppercase tracking-widest leading-none mb-2">Payout Fee</p>
+                   <p class="text-2xl font-black text-slate-900 tracking-tighter">₦0.00</p>
                 </div>
              </div>
           </div>
 
           <div>
-            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">3. Fulfillment & Logistics</h2>
-            <p>Merchants must mark orders as "Packaged" within 12-24 hours of notification. WiseKings Logistics partners will handle pickup. Excessive delays or "Out of Stock" cancellations (over 5% rate) will impact your Merchant Score and visibility.</p>
+            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">3. Fulfillment & Last-Mile Delivery</h2>
+            <p>Orders triggered through the WiseKings portal must be acknowledged within 4 business hours. Merchants are responsible for preparing shipments for pickup by WiseKings logistics partners. Failure to maintain a fulfillment rate of 98% or higher may result in reduced marketplace visibility.</p>
           </div>
 
           <div>
-            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">4. Payouts & Escrow</h2>
-            <p>Funds from sales are held in secure escrow until the customer confirms receipt or 48 hours post-delivery. Once released, funds are available in your Merchant Wallet. Payouts to bank accounts are processed daily.</p>
+            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">4. Financial Settlements & Payouts</h2>
+            <p>Merchant payouts are processed on a T+7 basis (7 days after confirmed customer delivery) to account for standard return windows. Funds are released from secure escrow directly into your Merchant Wallet. All financial transactions are logged and available for audit in your real-time Merchant Ledger.</p>
           </div>
 
           <div>
-             <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">5. Brand Usage</h2>
-             <p>Merchants are encouraged to use "Verified by WiseKings" badges on their packaging. However, unauthorized use of WiseKings corporate branding for non-marketplace activities is prohibited.</p>
+            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">5. IP Usage & Collaborative Brand Identity</h2>
+            <p>While on the marketplace, Merchants are granted a limited license to utilize the "WiseKings Approved Merchant" insignia. Conversely, WiseKings reserves the right to utilize Merchant product imagery for global marketing campaigns, social media promotion, and partner training materials.</p>
           </div>
         </section>
 

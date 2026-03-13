@@ -56,7 +56,7 @@
         <input 
           id="remember" 
           type="checkbox" 
-          class="w-4 h-4 rounded border-gray-300 text-emerald-600 focus:ring-emerald-500 cursor-pointer"
+          class="custom-checkbox"
         >
         <label for="remember" class="text-sm font-medium text-gray-600 cursor-pointer select-none">Remember for 30 days</label>
       </div>

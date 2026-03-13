@@ -23,36 +23,36 @@
         </header>
 
         <section class="prose prose-emerald max-w-none space-y-12 text-slate-600 leading-relaxed relative z-10">
-          <p class="text-lg font-medium text-slate-700">We understand that your business data — from recipes to sales volumes — is your most valuable asset. Our promise is simple: We secure your data, and we never share it with your competitors.</p>
+          <p class="text-lg font-medium text-slate-700 leading-relaxed">We understand that your business data — from proprietary logistics to regional sales volumes — is your most valuable asset. Our promise is unequivocal: We secure your data using banking-grade infrastructure, and we maintain an absolute wall between your strategic information and your competitors.</p>
 
           <div>
-             <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">1. Business Information We Collect</h2>
-             <p>As a merchant, we collect data to optimize your store performance and manage logistics:</p>
-             <ul class="list-disc pl-6 space-y-2 mt-4 font-bold text-slate-700">
-                <li>Operational Data: Product listings, inventory levels, and production capacities.</li>
-                <li>Financial Records: Sales history, commission deductions, and payout bank accounts.</li>
-                <li>Strategic Insights: Customer order patterns and store ratings.</li>
+             <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">1. Business Information Intelligence</h2>
+             <p>As a merchant, we collect granular data to optimize your store performance and manage the supply chain:</p>
+             <ul class="list-disc pl-6 space-y-3 mt-4 font-bold text-slate-700">
+                <li><span class="text-emerald-600">Operational Datasets:</span> SKU-level listings, real-time inventory buffers, and production lead times.</li>
+                <li><span class="text-emerald-600">Fiscal Records:</span> Transactional ledger history, platform fee deductions, and verified settlement accounts.</li>
+                <li><span class="text-emerald-600">Consumer Analytics:</span> Anonymized order patterns and aggregate store performance metrics.</li>
              </ul>
           </div>
 
           <div>
-            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">2. Guarding Your Secret Sauce</h2>
-            <p>Any proprietary information you share regarding your production processes or unique snack recipes is treated as highly confidential. WiseKings employees access this data only when necessary for quality control audits or logistical planning.</p>
+            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">2. Protecting Your Proprietary Information</h2>
+            <p>Any proprietary information you share regarding your production methodologies or unique snack formulations is classified as "Restricted" within our systems. Access is strictly audited and limited to quality control specialists and senior logistical planners. We do not engage in the harvesting of merchant recipes for the creation of WiseKings-owned "private label" equivalents.</p>
           </div>
 
-          <div class="p-8 bg-emerald-900 text-white rounded-3xl shadow-xl">
-             <h3 class="text-emerald-400 font-black mb-2 uppercase tracking-widest text-sm">Military-Grade Security</h3>
-             <p class="text-slate-300 text-sm">We utilize banking-standard encryption for all merchant transaction data. Your store credentials are secured with hardware-level protection and mandatory Multi-Factor Authentication (MFA).</p>
-          </div>
-
-          <div>
-            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">3. Marketplace Analytics</h2>
-            <p>We aggregate anonymized sales data to provide you with market trends and benchmarks. For example, we may tell you that "Spicy Plantain Chips" are trending in Nairobi, without revealing the specific sales data of individual competing merchants.</p>
+          <div class="p-8 bg-emerald-900 text-white rounded-3xl shadow-xl border border-emerald-800">
+             <h3 class="text-emerald-400 font-black mb-2 uppercase tracking-widest text-sm">Enterprise-Grade Architecture</h3>
+             <p class="text-slate-300 text-sm leading-relaxed">Merchant data is protected by hardware security modules (HSMs) and mandatory Multi-Factor Authentication (MFA). We employ zero-trust networking principles, meaning all data access requests are verified and logged in real-time to prevent internal or external breaches.</p>
           </div>
 
           <div>
-            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">4. Third-Party Fulfillment</h2>
-            <p>We share only the necessary order details (delivery address, customer name) with our vetted Logistics Partners to ensure your products reach the buyer safely and on time.</p>
+            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">3. Strategic Marketplace Benchmarking</h2>
+            <p>We aggregate anonymized sales data to provide Merchants with critical market trends and benchmarking reports. While we may share that specific snack categories are experiencing high demand in particular regions, we never reveal the exact sales volumes or customer lists of individual competing merchants.</p>
+          </div>
+
+          <div>
+            <h2 class="text-2xl font-black text-slate-900 mb-4 uppercase tracking-tight">4. Secure Third-Party Integrations</h2>
+            <p>We share only essential order details (delivery destination, recipient name, and weight) with our vetted Logistics Partners. These partners have signed strict Non-Disclosure Agreements (NDAs) and are prohibited from utilizing merchant data for any purpose other than successful shipment fulfillment.</p>
           </div>
         </section>
 

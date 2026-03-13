@@ -1,6 +1,5 @@
 <template>
   <div class="min-h-screen pb-12">
-    <definePageMeta :layout="'dashboard'" />
     
     <!-- Hero Section -->
     <div class="mb-8 relative p-10 rounded-[2.5rem] overflow-hidden bg-gray-900 border border-white/5 shadow-md shadow-black/5 group">

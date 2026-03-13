@@ -164,12 +164,37 @@ export const useChat = () => {
         }
     }
 
-    const sendMessage = (content: string) => {
+    const uploadChatFile = async (file: File, folder = 'chat') => {
+        const formData = new FormData()
+        formData.append('file', file)
+        try {
+            const endpoint = file.type.startsWith('image/') || file.type.startsWith('video/') || file.type.startsWith('audio/') 
+                ? `/uploads/image/${folder}`
+                : `/uploads/document/${folder}`;
+            const res: any = await $fetch(`${config.public.apiBase}${endpoint}`, {
+                method: 'POST',
+                headers: { Authorization: `Bearer ${accessToken.value}` },
+                body: formData
+            })
+            return res.url
+        } catch (error) {
+            console.error('File upload failed:', error)
+            throw error
+        }
+    }
+
+    const sendMessage = (content: string, type: string = 'text', attachments: string[] = [], replyTo?: string) => {
         const activeConvId = activeConversation.value?._id || activeConversation.value
-        if (!socket.value || !activeConvId) return
+        if (!socket.value || !activeConvId) {
+            console.error('Cannot send message: no active connection or conversation')
+            return
+        }
         socket.value.emit('chat:message', {
             conversationId: activeConvId,
-            content
+            content,
+            type,
+            attachments,
+            replyTo
         })
     }
 
@@ -200,6 +225,7 @@ export const useChat = () => {
         getParticipants,
         createConversation,
         sendMessage,
-        sendTyping
+        sendTyping,
+        uploadChatFile
     }
 }

@@ -71,7 +71,7 @@
           id="terms" 
           type="checkbox" 
           required
-          class="mt-1 w-4 h-4 rounded border-gray-300 text-emerald-600 focus:ring-emerald-500 cursor-pointer"
+          class="custom-checkbox"
         >
         <label for="terms" class="text-sm font-medium text-gray-600 cursor-pointer select-none leading-relaxed">
           I agree to the <NuxtLink to="/terms" class="text-emerald-600 font-bold hover:underline">Merchant Terms</NuxtLink> and <NuxtLink to="/privacy" class="text-emerald-600 font-bold hover:underline">Privacy Policy</NuxtLink>.

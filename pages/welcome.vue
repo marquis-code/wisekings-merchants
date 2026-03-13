@@ -61,7 +61,7 @@
 
         <div class="relative group reveal transition-all duration-1000 delay-300 transform scale-95 opacity-0">
           <div class="aspect-square bg-emerald-50 rounded-[3rem] overflow-hidden shadow-2xl relative border border-emerald-100">
-            <img src="https://images.unsplash.com/photo-1556740734-7193f4e2bdba?q=80&w=2000&auto=format&fit=crop" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" alt="Merchant Global Success" />
+            <img src="@/assets/images/hero2.jpg" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000" alt="Merchant Global Success" />
             
             <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/40 via-transparent to-transparent"></div>
 
@@ -188,16 +188,22 @@
                <li><NuxtLink to="/welcome" class="hover:text-white transition-colors">Merchant Home</NuxtLink></li>
                <li><NuxtLink to="/terms" class="hover:text-white transition-colors">Terms of Service</NuxtLink></li>
                <li><NuxtLink to="/privacy" class="hover:text-white transition-colors">Privacy Policy</NuxtLink></li>
-               <li><a href="http://localhost:3003" target="_blank" class="hover:text-white transition-colors">Partner Portal</a></li>
+               <li><a href="https://partners.wisekings.ng" target="_blank" class="hover:text-white transition-colors">Partner Portal</a></li>
             </ul>
         </div>
 
         <div>
            <h5 class="text-xs font-black uppercase tracking-widest text-emerald-500 mb-6 font-outfit">Connect</h5>
            <div class="flex gap-4 mb-8">
-             <div v-for="s in ['twitter', 'instagram', 'linkedin']" :key="s" class="w-8 h-8 rounded bg-white/5 flex items-center justify-center hover:bg-emerald-600 transition-all cursor-pointer">
-                <Icon :name="`lucide:${s}`" size="16" />
-             </div>
+             <a href="https://x.com/WisekingsS" target="_blank" class="w-8 h-8 rounded bg-white/5 flex items-center justify-center hover:bg-emerald-600 transition-all cursor-pointer">
+                <Icon name="lucide:twitter" size="16" />
+             </a>
+             <a href="https://www.instagram.com/wisekingsproducts/" target="_blank" class="w-8 h-8 rounded bg-white/5 flex items-center justify-center hover:bg-emerald-600 transition-all cursor-pointer">
+                <Icon name="lucide:instagram" size="16" />
+             </a>
+             <a href="https://web.facebook.com/profile.php?id=61583785186822" target="_blank" class="w-8 h-8 rounded bg-white/5 flex items-center justify-center hover:bg-emerald-600 transition-all cursor-pointer">
+                <Icon name="lucide:facebook" size="16" />
+             </a>
            </div>
            <p class="text-[10px] font-bold text-emerald-600 uppercase">Merchant Support: sellers@wisekings.ng</p>
         </div>
