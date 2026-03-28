@@ -409,24 +409,25 @@ function getRouteRules(arg) {
     return {};
   }
 }
-const __nuxt_page_meta$f = { layout: "dashboard" };
-const __nuxt_page_meta$e = { layout: "auth" };
-const __nuxt_page_meta$d = {
+const __nuxt_page_meta$g = { layout: "dashboard" };
+const __nuxt_page_meta$f = { layout: false };
+const __nuxt_page_meta$e = {
   layout: "chat"
 };
-const __nuxt_page_meta$c = { layout: "dashboard" };
-const __nuxt_page_meta$b = {
+const __nuxt_page_meta$d = { layout: "dashboard" };
+const __nuxt_page_meta$c = {
   layout: "auth"
 };
-const __nuxt_page_meta$a = { layout: false };
-const __nuxt_page_meta$9 = { layout: "dashboard" };
-const __nuxt_page_meta$8 = {
+const __nuxt_page_meta$b = { layout: false };
+const __nuxt_page_meta$a = { layout: "dashboard" };
+const __nuxt_page_meta$9 = {
   layout: "auth"
 };
-const __nuxt_page_meta$7 = { layout: "dashboard" };
-const __nuxt_page_meta$6 = { layout: false };
-const __nuxt_page_meta$5 = { layout: "dashboard" };
-const __nuxt_page_meta$4 = { layout: false };
+const __nuxt_page_meta$8 = { layout: "dashboard" };
+const __nuxt_page_meta$7 = { layout: false };
+const __nuxt_page_meta$6 = { layout: "dashboard" };
+const __nuxt_page_meta$5 = { layout: false };
+const __nuxt_page_meta$4 = { layout: "dashboard" };
 const __nuxt_page_meta$3 = { layout: "dashboard" };
 const __nuxt_page_meta$2 = { layout: "dashboard" };
 const __nuxt_page_meta$1 = {
@@ -439,98 +440,104 @@ const _routes = [
   {
     name: "kyc",
     path: "/kyc",
-    meta: __nuxt_page_meta$f || {},
-    component: () => import("./_nuxt/kyc-BeSz_ReO.js")
+    meta: __nuxt_page_meta$g || {},
+    component: () => import("./_nuxt/kyc-DwqI38mw.js")
   },
   {
     name: "otp",
     path: "/otp",
-    meta: __nuxt_page_meta$e || {},
-    component: () => import("./_nuxt/otp-CR6bUO5b.js")
+    meta: __nuxt_page_meta$f || {},
+    component: () => import("./_nuxt/otp-eclziC5b.js")
   },
   {
     name: "chat",
     path: "/chat",
-    meta: __nuxt_page_meta$d || {},
+    meta: __nuxt_page_meta$e || {},
     component: () => import("./_nuxt/chat-BF6YPu7m.js")
   },
   {
     name: "index",
     path: "/",
-    meta: __nuxt_page_meta$c || {},
-    component: () => import("./_nuxt/index-C26gnIh7.js")
+    meta: __nuxt_page_meta$d || {},
+    component: () => import("./_nuxt/index-gr49lDgX.js")
   },
   {
     name: "login",
     path: "/login",
-    meta: __nuxt_page_meta$b || {},
-    component: () => import("./_nuxt/login-CecYZSPj.js")
+    meta: __nuxt_page_meta$c || {},
+    component: () => import("./_nuxt/login-B05anC2d.js")
   },
   {
     name: "terms",
     path: "/terms",
-    meta: __nuxt_page_meta$a || {},
+    meta: __nuxt_page_meta$b || {},
     component: () => import("./_nuxt/terms-BxEe8ZFY.js")
   },
   {
     name: "orders",
     path: "/orders",
-    meta: __nuxt_page_meta$9 || {},
-    component: () => import("./_nuxt/orders-Cr7zdkVH.js")
+    meta: __nuxt_page_meta$a || {},
+    component: () => import("./_nuxt/orders-B2vnU1Nf.js")
   },
   {
     name: "signup",
     path: "/signup",
-    meta: __nuxt_page_meta$8 || {},
-    component: () => import("./_nuxt/signup-D5-YqSeT.js")
+    meta: __nuxt_page_meta$9 || {},
+    component: () => import("./_nuxt/signup-Bipw31kt.js")
   },
   {
     name: "wallet",
     path: "/wallet",
-    meta: __nuxt_page_meta$7 || {},
-    component: () => import("./_nuxt/wallet-DNkn29Xi.js")
+    meta: __nuxt_page_meta$8 || {},
+    component: () => import("./_nuxt/wallet-D5F4aCwj.js")
   },
   {
     name: "privacy",
     path: "/privacy",
-    meta: __nuxt_page_meta$6 || {},
+    meta: __nuxt_page_meta$7 || {},
     component: () => import("./_nuxt/privacy-DK_uGL-w.js")
   },
   {
     name: "profile",
     path: "/profile",
-    meta: __nuxt_page_meta$5 || {},
+    meta: __nuxt_page_meta$6 || {},
     component: () => import("./_nuxt/profile-CE1maNKN.js")
   },
   {
     name: "welcome",
     path: "/welcome",
-    meta: __nuxt_page_meta$4 || {},
+    meta: __nuxt_page_meta$5 || {},
     component: () => import("./_nuxt/welcome-BJLMgoiI.js")
   },
   {
     name: "referrals",
     path: "/referrals",
-    meta: __nuxt_page_meta$3 || {},
-    component: () => import("./_nuxt/referrals-C-HGSyrE.js")
+    meta: __nuxt_page_meta$4 || {},
+    component: () => import("./_nuxt/referrals-1slJ9GGF.js")
   },
   {
     name: "commissions",
     path: "/commissions",
+    meta: __nuxt_page_meta$3 || {},
+    component: () => import("./_nuxt/commissions-BgedHa9z.js")
+  },
+  {
+    name: "shelf-check",
+    path: "/shelf-check",
     meta: __nuxt_page_meta$2 || {},
-    component: () => import("./_nuxt/commissions-DsTxW3TF.js")
+    component: () => import("./_nuxt/shelf-check-C-_RWtHD.js")
   },
   {
     name: "reset-password",
     path: "/reset-password",
     meta: __nuxt_page_meta$1 || {},
-    component: () => import("./_nuxt/reset-password-CKZW6ZBp.js")
+    component: () => import("./_nuxt/reset-password-fEeiuPSI.js")
   },
   {
     name: "forgot-password",
     path: "/forgot-password",
     meta: __nuxt_page_meta || {},
-    component: () => import("./_nuxt/forgot-password-aJiD8JZr.js")
+    component: () => import("./_nuxt/forgot-password-DdyayUvV.js")
   }
 ];
 const _wrapInTransition = (props, children) => {
@@ -1962,7 +1969,7 @@ function createNuxtI18nContext(nuxt, vueI18n, defaultLocale) {
       return;
     }
     const headers = getLocaleConfig(locale)?.cacheable ? {} : { "Cache-Control": "no-cache" };
-    const messages = await $fetch(`${"/_i18n/lftEAtzT"}/${locale}/messages.json`, { headers });
+    const messages = await $fetch(`${"/_i18n/T5jgv_UB"}/${locale}/messages.json`, { headers });
     for (const k of Object.keys(messages)) {
       i18n.mergeLocaleMessage(k, messages[k]);
     }
@@ -6954,7 +6961,7 @@ const i18n_EI7LsD1KYQADczz5hrChviGQCdVM8yUkvFEZLJpmnvM = /* @__PURE__ */ defineN
     {
       localeConfigs.value = useRequestEvent().context.nuxtI18n?.localeConfigs || {};
     }
-    prerenderRoutes(localeCodes.map((locale) => `${"/_i18n/lftEAtzT"}/${locale}/messages.json`));
+    prerenderRoutes(localeCodes.map((locale) => `${"/_i18n/T5jgv_UB"}/${locale}/messages.json`));
     const i18n = createI18n(optionsI18n);
     const detectors = useDetectors(useRequestEvent(nuxt), useI18nDetection(nuxt), nuxt);
     const ctx = createNuxtI18nContext(nuxt, i18n, optionsI18n.defaultLocale);
@@ -7155,7 +7162,7 @@ const plugins = [
 const layouts = {
   auth: defineAsyncComponent(() => import("./_nuxt/auth-CBNTrjxN.js").then((m) => m.default || m)),
   chat: defineAsyncComponent(() => import("./_nuxt/chat-W2w4ZYkZ.js").then((m) => m.default || m)),
-  dashboard: defineAsyncComponent(() => import("./_nuxt/dashboard-CvbDhPmh.js").then((m) => m.default || m)),
+  dashboard: defineAsyncComponent(() => import("./_nuxt/dashboard-CbMXmmtN.js").then((m) => m.default || m)),
   default: defineAsyncComponent(() => import("./_nuxt/default-YMvQp4Bw.js").then((m) => m.default || m))
 };
 const routeRulesMatcher = _routeRulesMatcher;

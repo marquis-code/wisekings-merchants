@@ -1,6 +1,7 @@
 import { GATEWAY_ENDPOINT } from '../axios.config'
 
 export const merchants_api = {
+    get: (params?: any) => GATEWAY_ENDPOINT.get('/merchants', { params }),
     getProfile: () => GATEWAY_ENDPOINT.get('/merchants/me'),
     updateProfile: (payload: any) => GATEWAY_ENDPOINT.put('/merchants/me', payload),
     getDashboard: () => GATEWAY_ENDPOINT.get('/merchants/me/dashboard'),

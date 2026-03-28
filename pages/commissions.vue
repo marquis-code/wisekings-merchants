@@ -87,7 +87,14 @@
                   </div>
                   <div>
                     <span class="text-sm font-black text-gray-900 block tracking-tight">{{ typeof comm.orderId === 'object' ? (comm.orderId as any)?.orderNumber : comm.orderId }}</span>
-                    <span class="text-[9px] text-emerald-600 font-black uppercase tracking-widest">Standard Order</span>
+                    <span v-if="comm.facilityMerchantId" class="text-[9px] text-amber-600 font-black uppercase tracking-widest bg-amber-50 px-2 py-0.5 rounded border border-amber-100 flex items-center gap-1 w-fit mt-1">
+                        <Icon name="lucide:star" class="w-2.5 h-2.5" />
+                        Facilitation Incentive
+                    </span>
+                    <span v-else class="text-[9px] text-emerald-600 font-black uppercase tracking-widest bg-emerald-50 px-2 py-0.5 rounded border border-emerald-100 flex items-center gap-1 w-fit mt-1">
+                        <Icon name="lucide:user" class="w-2.5 h-2.5" />
+                        Standard Referral
+                    </span>
                   </div>
                 </div>
               </td>

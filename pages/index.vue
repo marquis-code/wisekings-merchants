@@ -46,6 +46,14 @@
         </div>
 
         <div v-if="dashboardData?.merchant" class="flex items-stretch gap-6 h-fit">
+          <NuxtLink to="/shelf-check" class="bg-amber-500 text-white rounded-3xl p-6 shadow-lg shadow-amber-500/10 hover:scale-105 active:scale-95 transition-all group flex flex-col justify-between">
+            <p class="text-[9px] font-bold text-amber-100 uppercase tracking-[0.2em] mb-1">Stock Check</p>
+            <p class="text-xl font-black tracking-tight capitalize">Shelf Status</p>
+            <div class="mt-4 flex items-center gap-2">
+              <Icon name="lucide:camera" class="w-5 h-5 text-amber-100 group-hover:rotate-12 transition-transform" />
+              <span class="text-[10px] font-bold text-white tracking-wide uppercase">Report Now</span>
+            </div>
+          </NuxtLink>
           <div class="bg-white/5 rounded-3xl p-6 border border-white/10 group hover:bg-white/10 transition-all duration-500">
             <p class="text-[9px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-1">Merchant Identity</p>
             <p class="text-xl font-black text-white tracking-wider">{{ dashboardData.merchant.merchantCode }}</p>
@@ -54,7 +62,7 @@
               <span class="text-[10px] font-bold text-gray-500">Scan Code</span>
             </div>
           </div>
-          <div class="bg-emerald-500 text-white rounded-3xl p-6 shadow-lg shadow-emerald-500/10">
+          <div class="bg-emerald-500 text-white rounded-3xl p-6 shadow-lg shadow-emerald-500/10 hidden sm:block">
             <p class="text-[9px] font-bold text-emerald-100 uppercase tracking-[0.2em] mb-1">Current Tier</p>
             <p class="text-xl font-black tracking-tight capitalize">{{ dashboardData.merchant.category || 'Standard' }}</p>
             <div class="mt-4 flex items-center gap-1.5">
