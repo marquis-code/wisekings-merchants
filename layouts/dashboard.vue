@@ -8,12 +8,14 @@
         </div>
       </div>
       <nav class="flex-1 overflow-y-auto py-6 px-4 space-y-1.5 style-scrollbar">
-        <NuxtLink v-for="item in navItems" :key="item.path" :to="item.path"
-          :class="['flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all group relative', route.path === item.path ? 'bg-emerald-50 text-emerald-600' : 'text-gray-500 hover:text-gray-900 hover:bg-gray-50']">
-          <Icon :name="item.icon" :class="['w-5 h-5 flex-shrink-0 transition-colors', route.path === item.path ? 'text-emerald-600' : 'text-gray-400 group-hover:text-gray-900']" />
-          <span v-if="open" class="whitespace-nowrap">{{ item.label }}</span>
-          <div v-if="route.path === item.path" class="absolute left-0 w-1 h-6 bg-emerald-600 rounded-r-full"></div>
-        </NuxtLink>
+        <template v-for="item in filteredNavItems" :key="item.path">
+          <NuxtLink :to="item.path"
+            :class="['flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-semibold transition-all group relative', route.path === item.path ? 'bg-emerald-50 text-emerald-600' : 'text-gray-500 hover:text-gray-900 hover:bg-gray-50']">
+            <Icon :name="item.icon" :class="['w-5 h-5 flex-shrink-0 transition-colors', route.path === item.path ? 'text-emerald-600' : 'text-gray-400 group-hover:text-gray-900']" />
+            <span v-if="open" class="whitespace-nowrap">{{ item.label }}</span>
+            <div v-if="route.path === item.path" class="absolute left-0 w-1 h-6 bg-emerald-600 rounded-r-full"></div>
+          </NuxtLink>
+        </template>
       </nav>
       <div class="p-4 border-t border-gray-50">
         <button @click="open = !open" class="w-full flex items-center justify-center px-4 py-3 rounded-xl text-gray-500 hover:text-gray-900 hover:bg-gray-50 transition-all">
@@ -81,11 +83,20 @@ const navItems = [
   { label: 'Dashboard', icon: 'lucide:layout-dashboard', path: '/' },
   { label: 'My Orders', icon: 'lucide:shopping-cart', path: '/orders' },
   { label: 'Commissions', icon: 'lucide:percent', path: '/commissions' },
+  { label: 'WSSP Portal', icon: 'lucide:award', path: '/wssp', forCoordinator: true },
   { label: 'Wallet', icon: 'lucide:wallet', path: '/wallet' },
   { label: 'Referrals', icon: 'lucide:share-2', path: '/referrals' },
   { label: 'KYC Verification', icon: 'lucide:shield-check', path: '/kyc' },
   { label: 'Support Chat', icon: 'lucide:message-square', path: '/chat' },
   { label: 'Profile', icon: 'lucide:user', path: '/profile' },
 ]
+
+const filteredNavItems = computed(() => {
+  return navItems.filter(item => {
+    if (item.forCoordinator && !user.value?.isCoordinator) return false
+    return true
+  })
+})
+
 const pageTitle = computed(() => navItems.find((i) => i.path === route.path)?.label || 'Merchant')
 </script>
